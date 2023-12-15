@@ -1,10 +1,25 @@
 .ulLink{
-    background-color: brown;
+    /* background-color: brown; */
     list-style: none;
+    width: 67rem;
+    display: flex;
     margin: 0px;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
 }
 .divNav{
     width: 100vw;
     margin: 0px;
+    display: flex;
+    justify-content: center;
     padding: 0px;
+    background-color: darkgoldenrod;
+}
+.conainterItems{
+    display: flex;
+    place-items: center;
+}
+.logoNav{
+    font-size: 3rem;
+    margin: 10px;
 }
