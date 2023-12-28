@@ -11,9 +11,9 @@ function App() {
   return (
     <>
         <Nav/>
-        {/* <Routes>
+        <Routes>
           <Route path={ROUTES.HOME} element={<Home/>} />
-        </Routes>  */}
+        </Routes> 
         {/* <Link to="/Home">Home</Link> */}
     </>
   )

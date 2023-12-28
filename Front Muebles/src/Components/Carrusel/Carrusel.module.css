@@ -1,0 +1,10 @@
+.custom_carousel {
+    display: flex;
+    overflow: hidden;
+    text-align: -webkit-center;
+}
+
+.carousel_slide {
+width: 100%;
+flex-shrink: 0;
+}

@@ -11,7 +11,7 @@ export default function Nav() {
       </div>
       <div className={style.conainterItems}>
         <ul className={style.ulLink}>
-              <li><NavLink  to={ROUTES.INICIO}>Inicio</NavLink></li>
+              <li><NavLink  to={ROUTES.HOME}>Inicio</NavLink></li>
               <li><NavLink  to={ROUTES.NUESTROSMUEBLES}>Nuestros Muebles</NavLink></li>
               <li><NavLink  to={ROUTES.ABOUT}>Quienes Somos</NavLink></li>
               <li><NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink></li>
