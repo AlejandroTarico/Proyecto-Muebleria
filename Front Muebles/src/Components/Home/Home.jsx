@@ -15,9 +15,9 @@ function Home() {
       <h2 className={style.homeH2}>
       HOLA MUNDO 
       </h2>
-      {/* <div> */}
+      <div className="w-[55vw]">
       <Carrusel images={images} />
-      {/* </div> */}
+      </div>
       
     </div>
   )

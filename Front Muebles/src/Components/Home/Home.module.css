@@ -3,6 +3,7 @@
     background-color: aqua;
     margin: 0px;
     /* width: 100vw; */
+    text-align: -webkit-center;
 }
 .homeH2{
     margin: 0px;
