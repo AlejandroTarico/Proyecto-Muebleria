@@ -25,7 +25,7 @@ function Carrusel ({ images }) {
       }, [images.length]);
   
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden rounded-xl">
             <div className="flex transition-transform duration-500 ease-in" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {images.map((image, index) => (
                 <div key={index} className="w-full flex-shrink-0">
