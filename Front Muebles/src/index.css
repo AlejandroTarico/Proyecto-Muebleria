@@ -67,6 +67,24 @@ button:focus-visible {
   }
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-240px * 6 - 0.5rem *12)); /*Nota importante: el valor dentro del parentecis corresponde al
+     tamaño de la tarjeta a la cual va a estar asociado el movimiento ciclico luego hay que multiplicar por la 
+     cantidad tarjetas que tengamos en el arreglo luego restar el margen que colocamos entre tarjetas y por
+     ultimo, multiplicarlo por el doble de las trajetas que se encuentran en el arreglo*/
+  }
+}
+.animate-scroll{
+  animation: scroll 13s linear infinite;
+}

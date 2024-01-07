@@ -4,12 +4,12 @@ import Scroll from './Scroll'
 function Slider() {
 
   const sillas = [
-    'https://tengomueblesalamanca.com/wp-content/uploads/2020/10/098C-compress.png',
-    'https://i.pinimg.com/736x/a1/9c/94/a19c9465085f22b35c265e60a65947d4.jpg',
-    'https://http2.mlstatic.com/D_NQ_NP_932628-MLA71789106601_092023-O.webp',
-    'https://media.v2.siweb.es/uploaded_thumb_medium/a4eaa8c820f94c96bd8e6e30096ae518/silla_confort_2.jpg',
-    'https://http2.mlstatic.com/D_NQ_NP_702087-MLA48537345240_122021-O.webp',
-    'https://www.mobiliariodehosteleria.com/11067-large_default/silla-de-madera-almonte.jpg'
+    'https://www.torca.com.ar/images/00000000000590849486559084.jpg',
+    'https://www.taburetes.com/6785-medium_default/silla-de-madera-ref-190.jpg',
+    'https://mobelo.com.mx/wp-content/uploads/2022/09/antecomedor-manchester-silla-204s-mobelo-muebles.jpg',
+    'https://www.torca.com.ar/thumb/00000000000590829465259082_400x400.jpg',
+    'https://sillastapizadas.com/1813-large_default/silla-mallorca.jpg',
+    'https://www.torca.com.ar/images/000000000005908593786Silla-Recta-120-Roble.jpg'
   ]
   const sillasSlider = [...sillas, ...sillas]
 

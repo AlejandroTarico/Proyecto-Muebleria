@@ -14,6 +14,12 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'josefin': ['Josefin Sans'],
+    },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 }

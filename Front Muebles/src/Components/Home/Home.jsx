@@ -12,11 +12,11 @@ function Home() {
 
 
   return (
-    <div className={style.home_Background}>
+    <div className='bg-gray-200'>
       <h2 className={style.homeH2}>
       HOLA MUNDO 
       </h2>
-      <div className="w-[90vw] rounded-xl shadow-[0px_5px_5px_5px_rgb(0,0,0,29%)]">
+      <div className=" container rounded-xl shadow-[0px_5px_5px_5px_rgb(0,0,0,29%)]">
         <Carrusel images={images} />
       </div>
       <h2>tercer div</h2>
