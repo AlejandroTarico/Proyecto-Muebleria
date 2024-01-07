@@ -29,7 +29,7 @@ function Carrusel ({ images }) {
             <div className="flex transition-transform duration-500 ease-in" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {images.map((image, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                    <img src={image} alt={`Slide ${index}`} className="w-full"/>
+                    <img src={image} alt={`Slide ${index}`} className="w-full h-[600px]"/>
                 </div>
             ))}
             </div>
