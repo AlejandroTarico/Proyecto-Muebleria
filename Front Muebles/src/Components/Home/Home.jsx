@@ -13,9 +13,6 @@ function Home() {
 
   return (
     <div className=' pt-28 pb-16 bg-gray-200'>
-      {/* <h2 className={style.homeH2}>
-      HOLA MUNDO 
-      </h2> */}
       <div className="container rounded-xl shadow-[0px_5px_5px_5px_rgb(0,0,0,29%)]">
         <Carrusel images={images} />
       </div>
