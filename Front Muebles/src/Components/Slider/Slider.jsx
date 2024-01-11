@@ -18,8 +18,8 @@ function Slider() {
       <div className='overflow-hidden w-full'>
         <div className='flex whitespace-nowrap animate-scroll'>
           {
-            sillasSlider.map((carr) => (
-              <Scroll carr={carr} />
+            sillasSlider.map((carr, index) => (
+              <Scroll key={index} carr={carr} />
             ))
           }
         </div>
