@@ -5,9 +5,10 @@ import Slider from '../Slider/Slider';
 
 function Home() {
   const images = [
-    'https://www.rosado.com.tr/wp-content/uploads/2023/05/Muebles-de-sala.webp',
+    'https://myoc.es/wp-content/uploads/2022/07/40000-amb-A5-salon-Modular-Studio-5-1024x576.jpg',
     'https://taxo.es/wp-content/uploads/2023/07/muebles-de-diseno-1024x576.jpg',
     'https://www.moblesamida.net/wp-content/uploads/2022/04/spacejoy-q3Qd86sfaoU-unsplash-1024x576.jpg',
+    'https://www.losbarriales.com/wp-content/uploads/2023/06/20230117_115121-1024x576.jpg',
   ];
 
 

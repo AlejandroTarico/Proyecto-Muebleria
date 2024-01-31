@@ -52,7 +52,7 @@ export default function Nav() {
           </div>
         </div>
       </div>
-      {isModalOpen && <ModalContent />}
+      <ModalContent />
     </div>
   )
 }
