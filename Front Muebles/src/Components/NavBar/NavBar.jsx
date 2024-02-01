@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../Helpers/RoutesPath'
-import ModalContent from '../ModalContent/ModalContent';
+// import ModalContent from '../ModalContent/ModalContent';
 import { useDispatch, useSelector } from 'react-redux';
 import {openModal, closeModal} from '../../Redux/modalSlice';
 
@@ -9,7 +9,7 @@ import {openModal, closeModal} from '../../Redux/modalSlice';
 function NavBar() {
   
 
-  const isModalOpen = useSelector((state) => state.modal.isModalOpen);
+  // const isModalOpen = useSelector((state) => state.modal.isModalOpen);
   const dispatch = useDispatch();
 
   
@@ -23,13 +23,19 @@ function NavBar() {
 
   return (
     <div className='col-span-10 pt-1'>
-        <ul className='list-none flex justify-around'>
-            <li><NavLink  to={ROUTES.HOME}>Inicio</NavLink></li> 
-            <li><NavLink  to={ROUTES.NUESTROSMUEBLES} onMouseEnter={handleModalMouseEnter}>Nuestros Muebles</NavLink></li>
-            <li><NavLink  to={ROUTES.ABOUT} onMouseEnter={handleModalMouseLeave}>Quienes Somos</NavLink></li>
-            <li><NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink></li>
-            <li><NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink></li>
-        </ul>
+        <div className='list-none flex justify-around'>
+          <NavLink  to={ROUTES.HOME}>Inicio</NavLink>
+          <NavLink className='flex' to={ROUTES.NUESTROSMUEBLES} onMouseEnter={handleModalMouseEnter}>
+            Nuestros Muebles 
+            <svg className="h-7 w-6 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  
+              <path stroke="none" d="M0 0h24v24H0z"/>  
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </NavLink>
+          <NavLink  to={ROUTES.ABOUT} onMouseEnter={handleModalMouseLeave}>Quienes Somos</NavLink>
+          <NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink>
+          <NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink>
+        </div>
     </div>
   )
 }
