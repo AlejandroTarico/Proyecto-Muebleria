@@ -53,7 +53,6 @@ function Slider() {
           }
         </div>
       </div>
-
     </div>
   )
 }

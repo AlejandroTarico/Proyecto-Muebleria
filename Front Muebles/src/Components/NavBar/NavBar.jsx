@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../Helpers/RoutesPath'
-// import ModalContent from '../ModalContent/ModalContent';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {openModal, closeModal} from '../../Redux/modalSlice';
 
 
 function NavBar() {
   
 
-  // const isModalOpen = useSelector((state) => state.modal.isModalOpen);
   const dispatch = useDispatch();
 
   
@@ -34,7 +32,7 @@ function NavBar() {
           </NavLink>
           <NavLink  to={ROUTES.ABOUT} onMouseEnter={handleModalMouseLeave}>Quienes Somos</NavLink>
           <NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink>
-          <NavLink  to={ROUTES.MICOMBO}>Mi Combo</NavLink>
+          <NavLink  to={ROUTES.MICOMBO}>Contáctanos</NavLink>
         </div>
     </div>
   )

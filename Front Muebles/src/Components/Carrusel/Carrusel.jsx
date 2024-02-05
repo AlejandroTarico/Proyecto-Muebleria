@@ -18,7 +18,7 @@ function Carrusel ({ images }) {
     useEffect(() => {
         const intervalId = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-        }, 3000);
+        }, 4000);
     
         // Limpia el intervalo al desmontar el componente
         return () => clearInterval(intervalId);

@@ -36,9 +36,9 @@ function ModalContent() {
   }
 
   return (
-    <div> 
-      <div className={`${isModalOpen ? 'opacity-75 visible duration-500' : 'opacity-0 invisible duration-[500ms]'} h-auto  w-auto inline-block bg-slate-100 rounded-xl`}  onMouseLeave={handleModalMouseLeave}>
-        <div className="grid grid-cols-3 gap-2 font-josefin">
+    // <div> 
+      <div className={`${isModalOpen ? 'opacity-95 visible h-auto w-auto duration-500' : 'opacity-0 invisible duration-[500ms] h-0 '}  inline-block `}  onMouseLeave={handleModalMouseLeave}>
+        <div className="grid grid-cols-3 gap-2 font-josefin bg-slate-100 rounded-xl">
           {listMuebles.map((mueble, index) => (
             <div className=' text-left px-9 py-6' key={index}>
               <h2 className='text-lg font-bold border-b-2 border-b-black mb-3'>{mueble.title}</h2>
@@ -52,7 +52,7 @@ function ModalContent() {
         </div>
       </div>
     
-    </div>
+    // </div>
   )
 }
 

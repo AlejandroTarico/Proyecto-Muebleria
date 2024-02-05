@@ -18,7 +18,7 @@ export default function Nav() {
 
   return (
     <div className=' fixed z-50 w-full'>
-      <div className='bg-neutral-50 bg-opacity-75'>
+      <div className='bg-neutral-50 bg-opacity-80'>
         <div className='container grid grid-cols-1 md:grid-cols-5'>
 
           <div className='m-2 col-span-1 flex items-center justify-center'>

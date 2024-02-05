@@ -12,9 +12,11 @@ function App() {
   return (
     <>
         <Nav/>
-        <Routes>
-          <Route path={ROUTES.HOME} element={<Home/>} />
-        </Routes> 
+        <div className='min-h-40'>
+          <Routes>
+            <Route path={ROUTES.HOME} element={<Home/>} />
+          </Routes> 
+        </div>
         <Footer/>
     </>
   )
