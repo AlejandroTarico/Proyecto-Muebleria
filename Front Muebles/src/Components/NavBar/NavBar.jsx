@@ -22,10 +22,10 @@ function NavBar() {
   return (
     <div className='col-span-10 pt-1'>
         <div className='list-none flex justify-around'>
-          <NavLink  to={ROUTES.HOME}>Inicio</NavLink>
+          <NavLink  to={ROUTES.HOME} onMouseEnter={handleModalMouseLeave}>Inicio</NavLink>
           <NavLink className='flex' to={ROUTES.NUESTROSMUEBLES} onMouseEnter={handleModalMouseEnter}>
             Nuestros Muebles 
-            <svg className="h-7 w-6 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  
+            <svg className="h-7 w-6 text-white"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  
               <path stroke="none" d="M0 0h24v24H0z"/>  
               <polyline points="6 9 12 15 18 9" />
             </svg>

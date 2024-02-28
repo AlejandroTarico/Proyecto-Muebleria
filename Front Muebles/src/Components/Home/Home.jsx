@@ -27,7 +27,7 @@ function Home() {
   ]
 
   return (
-    <div className=' pt-28 pb-16 bg-gray-200'>
+    <div className=''>
       <div className="container rounded-xl shadow-[0px_5px_5px_5px_rgb(0,0,0,29%)]">
         <Carrusel images={images} />
       </div>
@@ -40,18 +40,11 @@ function Home() {
       <div className='pt-4 h-32 flex items-center justify-center'>
         <h2 className=' font-josefin text-[3rem] border-b-2 border-slate-500 px-96'>Lo Más Destacado</h2>
       </div>
-      {/* <div>
-        {
-          imagesDestacadas.map((destacados, index) => (
-            <Card destacados={destacados} key={index}/>
-          ))
-        }
-      </div> */}
       <div className='grid grid-cols-3 gap-4 mx-4 py-5'>
-      {imagesDestacadas.map((destacados, index) => (
-        <Card destacados={destacados} key={index}/>
-      ))}
-    </div>
+        {imagesDestacadas.map((destacados, index) => (
+          <Card destacados={destacados} key={index}/>
+        ))}
+      </div>
     </div>
   )
 }

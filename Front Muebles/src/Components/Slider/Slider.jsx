@@ -17,7 +17,7 @@ function Slider() {
   },
   {
     id:3,
-    img:'https://mobelo.com.mx/wp-content/uploads/2022/09/antecomedor-manchester-silla-204s-mobelo-muebles.jpg',
+    img:'https://www.dualequipamientos.com.ar/wp-content/uploads/2021/02/Silla-Canis-Lustre-cedro.jpg',
     title: 'Silla de madera',
     description: 'Silla de madera elegante marron tapizada'
   },

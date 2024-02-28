@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {openModal, closeModal} from '../../Redux/modalSlice';
+import {Link} from 'react-router-dom'
+import { ROUTES } from '../../Helpers/RoutesPath';
 
 
 function ModalContent() {
@@ -16,7 +18,7 @@ function ModalContent() {
     {
       id: 0,
       title: 'Muebles de Cocina',
-      elements: {0: 'Alacena', 1: 'Bajo Mesada', 2: 'Mesa', 3: 'Especiero', 4: 'Despensa'}
+      elements: {0: 'Alacena', 1: 'Bajo Mesada', 2: 'Isla', 3: 'Especiero', 4: 'Despensa'}
     },
     {
       id: 1,
@@ -31,28 +33,23 @@ function ModalContent() {
 
   ];
 
-  const sectionMueble = (i, item) => {
-    console.log("La clave del mueble selecionado es: ", i + "  Y El nombre del mueble es: ", item);
-  }
-
   return (
-    // <div> 
-      <div className={`${isModalOpen ? 'opacity-95 visible h-auto w-auto duration-500' : 'opacity-0 invisible duration-[500ms] h-0 '}  inline-block `}  onMouseLeave={handleModalMouseLeave}>
-        <div className="grid grid-cols-3 gap-2 font-josefin bg-slate-100 rounded-xl">
-          {listMuebles.map((mueble, index) => (
-            <div className=' text-left px-9 py-6' key={index}>
-              <h2 className='text-lg font-bold border-b-2 border-b-black mb-3'>{mueble.title}</h2>
-              <ul>
-                {Object.values(mueble.elements).map((item, i) => (
-                  <li className='text-base font-medium mb-1 cursor-pointer' onClick={() => sectionMueble(i, item)} key={i}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+    <div className={`${isModalOpen ? 'opacity-95 visible h-auto w-auto duration-500' : 'opacity-0 invisible duration-[500ms] h-0 '}  inline-block `}  onMouseLeave={handleModalMouseLeave}>
+      <div className="grid grid-cols-3 gap-2 font-josefin bg-slate-100 rounded-xl">
+        {listMuebles.map((mueble, index) => (
+          <div className=' text-left px-9 py-6' key={index}>
+            <h2 className='text-lg font-bold border-b-2 border-b-black mb-3'>{mueble.title}</h2>
+            <ul>
+              {Object.values(mueble.elements).map((item, i) => (
+                <li className='text-base font-medium mb-1 cursor-pointer' key={i} onClick={handleModalMouseLeave}>
+                  <Link to={ROUTES.SECCION + "/" + mueble.title.replace(/\s+/g, '-') + "/" + item.replace(/\s+/g, '-')}>{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    
-    // </div>
+    </div>
   )
 }
 
